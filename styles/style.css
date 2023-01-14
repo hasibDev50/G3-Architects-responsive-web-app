@@ -37,13 +37,61 @@ body{
     font-size: 18px;
     font-weight: 500;
 }
+/*--------------------------
+    banner section styles
+---------------------------*/
+.banner-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 50px 0;
+    background: url('https://i.ibb.co/y5zRZFP/G3-Architects-bg.png') ;
+    background-repeat: no-repeat;
+    background-size: 100% 87%;
+    padding-top: 100px;
+}
+.banner-text{
+    width: 850px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.banner-title{
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0;
+}
+.banner-desc{
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin: 16px 0 0 0px;
+}
+.banner-button{
+    background-color: #FF900E;
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 25px;
+    margin: 0;
+    margin-top: 32px;
+    border: none;
+    border-radius: 5px;
+
+}
+
+
 
 /*----------------------------
      Media Query Breakpoints 
 ----------------------------- */
-/*------ header section start -----*/
+
 /* smartphone  */
 @media only screen and (max-width: 576px) {
+    /*------ header section start -----*/
     .header{
         flex-direction: column;
         width: 100%;
@@ -64,6 +112,36 @@ body{
         margin-left: 0;
         margin-bottom: 5px;
     }
+    /*------ header section end -----*/
+
+    /*------ banner section start -----*/
+    .banner-container{
+        background-size: 100% 95%;
+        padding: 50px 10px 0 10px;
+        
+    }
+    .banner-text{
+        width: 100%;
+    }
+    .banner-title{
+        font-size: 30px;
+    }
+    .banner-desc{
+        padding: 0 10px;
+    }
+    .banner-button{        
+        font-size: 16px;
+        padding: 15px 20px;    
+    }
+    .banner-image{
+        display: flex;
+        justify-content: center;
+    }
+    .banner-image img{
+        width: 85%;
+
+    }
+    /*------ banner section end -----*/
 }
 /* tablet  */
 @media only screen and (min-width: 577px)and (max-width: 768px){
@@ -83,6 +161,4 @@ body{
         margin-left: 30px;
     }
 }
-/*------ header section end -----*/
 
-/*------ header section start -----*/
