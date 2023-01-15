@@ -68,6 +68,7 @@ body{
     text-align: center;
     font-size: 16px;
     font-weight: 400;
+    color: #727272;
     line-height: 26px;
     margin: 16px 0 0 0px;
 }
@@ -90,6 +91,53 @@ body{
 .banner-image img{
     width: 90%;
 }
+/*--------------------------------------
+    g3-feature-gallery section styles
+---------------------------------------*/
+.g3-feature-gallery-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 100px 0;
+    gap: 0 50px;
+}
+.g3-feature-gallery-images{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    gap: 24px;
+}
+.g3-feature-gallery-images img{
+    width: 300px;
+}
+.g3-feature-gallery-text{
+    width: 500px;
+}
+.g3-feature-gallery-title{
+    font-size: 45px;
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.g3-feature-gallery-title span{
+    font-weight: 500;
+    color: #727272;
+}
+.g3-feature-gallery-title.filled{
+color:#FF900E;
+}
+.g3-gallery-desc{
+    font-size: 15px;
+    font-weight: 400;
+    color: #727272;
+    line-height: 26px;
+    margin: 24px 0 32px 0;
+}
+.g3-feature-button{
+    padding: 15px 20px;
+    font-weight: 400;
+    font-size: 16px;
+    margin: 0;
+}
 
 
 
@@ -99,7 +147,7 @@ body{
 
 /* smartphone  */
 @media only screen and (max-width: 576px) {
-    /*------ header section start -----*/
+    /*--- header section start ---*/
     .header{
         flex-direction: column;
         width: 100%;
@@ -145,6 +193,25 @@ body{
 
     }
     /*------ banner section end -----*/
+
+    /*------ g3-feature-gallery section start -----*/
+    .g3-feature-gallery-container{
+        flex-direction: column;
+    }
+    .g3-feature-gallery-images{
+        grid-template-columns: repeat(1, auto);
+        justify-content: center;
+    }
+    .g3-feature-gallery-text{
+        width: auto;
+        margin: auto;
+        padding: 50px 10px 0 10px;
+    }
+    .g3-feature-gallery-title{
+        font-size: 30px;
+    }
+
+    /*------ g3-feature-gallery section end -----*/
 }
 /* tablet  */
 @media only screen and (min-width: 577px)and (max-width: 768px){
